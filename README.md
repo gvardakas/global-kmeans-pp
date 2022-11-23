@@ -1,1 +1,1 @@
-# global-kmeans-pp
+# The Global $k$-mean++ clustering algorithm
