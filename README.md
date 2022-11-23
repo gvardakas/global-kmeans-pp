@@ -1,1 +1,1 @@
-# The Global $k$-mean++ clustering algorithm
+# The Global $k$-mean\texttt{++} clustering algorithm
