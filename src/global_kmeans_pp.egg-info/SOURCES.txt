@@ -1,0 +1,10 @@
+LICENSE
+README.md
+pyproject.toml
+src/global_kmeans_pp/__init__.py
+src/global_kmeans_pp/global_clustering.py
+src/global_kmeans_pp.egg-info/PKG-INFO
+src/global_kmeans_pp.egg-info/SOURCES.txt
+src/global_kmeans_pp.egg-info/dependency_links.txt
+src/global_kmeans_pp.egg-info/requires.txt
+src/global_kmeans_pp.egg-info/top_level.txt

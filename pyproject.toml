@@ -1,0 +1,36 @@
+[build-systems]
+requires = ["setuptools>=61.0.0", "wheel>=0.38"]
+build_backend = "setuptools.build_meta"
+
+[project]
+name = "global-kmeans-pp"
+version = "0.1.0"
+description = "A library for implementing the global k-means and the global k-means++ clustering algorithms."
+readme = "README.md"
+authors = [{name = "Georgios Vardakas", email = "g.vardakas@uoi.gr"}]
+maintainers = [{name = "Georgios Vardakas", email = "g.vardakas@uoi.gr"}]
+license = {file = "LICENSE"}
+requires-python = ">=3.10"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+]
+keywords = ["clustering", "k-means", "clustering error", "global optimization", "global k-means", "k-means++", "global k-means++"]
+dependencies = ["numpy", "scikit-learn"]
+
+[project.urls]
+"Homepage" = "https://github.com/gvardakas/global-kmeans-pp"
+"Issues" = "https://github.com/gvardakas/global-kmeans-pp/issues"
+
+[tool.setuptools]
+packages = ["global_kmeans_pp"]
+package-dir = {"" = "src"}
+
+#[tool.setuptools.packages.find]
+#where = ["src"]
+#include = ["global_kmeans_pp"] 
+#namespaces = false
+
+#[project.scripts]
+#cli-name = "global_kmeans_pp.GlobalKMeansPP:GlobalKMeansPP"
