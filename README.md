@@ -2,9 +2,9 @@
 
 * The $k$-means algorithm is a prevalent clustering method due to its simplicity, effectiveness, and speed. However, its main disadvantage is its high sensitivity to the initial positions of the cluster centers. The global $k$-means is a deterministic algorithm proposed to tackle the random initialization problem of k-means but its well-known that requires high computational cost. It partitions the data to $K$ clusters by solving all $k$-means sub-problems incrementally for all $k=1,\ldots, K$. For each $k$ cluster problem, the method executes the $k$-means algorithm $N$ times, where $N$ is the number of datapoints. 
 
-* The global $k$-means\texttt{++} is an effective relaxation of the global $k$-means clustering algorithm, providing an ideal compromise between clustering error and execution speed. It is an effective way of acquiring quality clustering solutions akin to those of global $k$-means with a reduced computational load. It is an incremental clustering approach that dynamically adds one cluster center at each $k$ cluster sub-problem. For each $k$ cluster sub-problem, the method selects $L$ data points as candidates for the initial position of the new center using the effective $k$-means\texttt{++} selection probability distribution. The selection method is fast and requires no extra computational effort for distance computations.
+* The global $k$-means++ is an effective relaxation of the global $k$-means clustering algorithm, providing an ideal compromise between clustering error and execution speed. It is an effective way of acquiring quality clustering solutions akin to those of global $k$-means with a reduced computational load. It is an incremental clustering approach that dynamically adds one cluster center at each $k$ cluster sub-problem. For each $k$ cluster sub-problem, the method selects $L$ data points as candidates for the initial position of the new center using the effective $k$-means++ selection probability distribution. The selection method is fast and requires no extra computational effort for distance computations.
 
-* In this python library we provide both global $k$-means and the global $k$-means\texttt{++} clustering algorithms.
+* In this python library we provide both global $k$-means and the global $k$-means++ clustering algorithms.
 
 # Dependencies
 * `numpy`
@@ -18,7 +18,7 @@ The library provides two classes:
 * GlobalKMeans
 * GlobalKMeansPP
   
-that implements the global $k$-means and the global $k$-means\texttt{++} respectivly. Both function consist of 
+that implements the global $k$-means and the global $k$-means++ respectivly. Both function consist of 
 * .fit()
 * .predict()
 * .fit_predict()
